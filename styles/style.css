@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Work Sans", sans-serif;
+}
+/* shareed style */
+
+.display-flex{
+    display: flex;
+}
+
+.btn-primari{
+    width: 150px;
+    height: 54px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    color: white;
+    margin: 20px 0 20px 0;
+    font-size: 1rem;
+}
+
+/* header style */
+
+header{
+    background-color:rgba(255, 144, 14, 0.1) ;
+    flex-direction: column;
+}
+.header-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header-description{
+    font-size: 1.5rem;
+    color: rgb(83, 82, 82);
+    padding: 20px;
+}
+.header-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.header-img{
+    width: 100%;
+    margin: 0 auto;
+}
+/* navbar style */
+nav, .banner{
+    
+    max-width: 1440px;
+    justify-content: space-around;
+    align-items:center ;
+    margin: 0 auto;
+    padding: 30px;
+}
+nav ul{
+    gap: 30px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(66, 66, 66) ;
+}
+/* main section */
+
+.our-fetures{
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 20px;
+    gap: 50px;
+}
+.fetures-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.feture-content h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.feture-content p{
+    font-size: 1rem;
+    /* margin: 10px; */
+    max-width: 500px;
+}
+#quick-list{
+   color: rgb(114, 114, 114); 
+}
+#feature{
+    color: rgb(255, 144, 14);
+}
+/* header style */
+
+/* respomsive start */
+@media screen and (max-width:576px){
+    .navbar, .navlinks, .our-fetures{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .fetures-img{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:970px){
+    .our-fetures{
+        flex-direction: column;
+        text-align: center;
+    }
+    .fetures-img{
+        gap: 0px;
+    }
+}
